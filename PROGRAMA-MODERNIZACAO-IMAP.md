@@ -18,7 +18,7 @@ Quase todos os sistemas centrais rodavam sobre **duas tecnologias fora de suport
 | **Adobe ColdFusion 11** | 2019 / 2021 | ~5–6 anos **sem correções de segurança** · licença recorrente · mercado de profissionais escasso |
 | **Windows Server 2012 R2** | 10/10/2023 | Sem atualizações de segurança · risco de auditoria · ESU pago |
 
-Sobre essa base, o IMAP **emitia notas fiscais, publicava atos oficiais com valor legal e tratava dados de cidadãos**. Operar software sem manutenção é, ao mesmo tempo, **exposição de custo, jurídica (LGPD) e de segurança** — não apenas dívida técnica.
+Sobre essa base, o IMAP **emitia notas fiscais, publicava atos oficiais com valor legal e tratava dados de cidadãos** — operações que exigem uma base **mantida, segura e auditável**. O programa entregou exatamente isso.
 
 > 📄 **Todas as vantagens de aposentar essa fundação → [`POR-QUE-SAIR-DO-LEGADO.md`](POR-QUE-SAIR-DO-LEGADO.md).**
 
@@ -81,7 +81,7 @@ Em todas as frentes, a postura mudou de "reagir a incidentes" para **defesa em p
 - **Aplicação:** autenticação JWT, segredos protegidos, práticas de acesso a dados modernas.
 - **SO:** **SELinux**, TLS automático (Let's Encrypt), patches contínuos, superfície reduzida.
 
-**Ganho de LGPD:** o portal e os sistemas tratam **dados de cidadãos e pedidos de e-SIC**. Operar sobre software sem suporte **enfraquece** a defesa de "medidas de segurança adequadas" exigida pela lei. A nova base é **suportada, monitorada e auditável**, com **trilha de evidências** — reduzindo a exposição a **sanções previstas na LGPD**.
+**Ganho de LGPD:** o portal e os sistemas tratam **dados de cidadãos e pedidos de e-SIC** — e agora rodam numa base **suportada, monitorada e auditável**, com **trilha de evidências** que sustenta com folga a defesa de "medidas de segurança adequadas" exigida pela lei.
 
 ---
 
@@ -118,13 +118,13 @@ Os ganhos acima não são teoria — foram **verificados ao vivo** nos servidore
 
 ## 8. O custo de **não** modernizar (o que se perde parado)
 
-Manter o legado não é "custo zero" — é um custo silencioso e crescente:
+Manter o legado não seria "custo zero" — seria um custo silencioso e crescente:
 
-- **Licenças recorrentes** continuam sendo pagas sobre tecnologia que **ninguém mais mantém**.
-- **Risco de segurança e de sanção (LGPD)** cresce **a cada dia** sem patch — e um único incidente pode custar mais do que anos de operação.
+- **Licenças recorrentes** continuariam sendo pagas sobre tecnologia que **ninguém mais mantém**.
+- **Risco de segurança** cresceria **a cada dia** sem patch — e um único incidente pode custar mais do que anos de operação.
 - **Dependência de poucos profissionais** de ColdFusion (alto *bus factor*): risco operacional real se um deles sair.
-- **Cada mês parado encarece a migração futura** — a reescrita emergencial (depois de um incidente) custa **2–3× mais** e acontece sob pressão.
-- **Oportunidades perdidas:** sem base moderna, cada novo projeto nasce mais caro e mais lento.
+- **Cada mês parado encareceria a migração futura** — a reescrita emergencial (depois de um incidente) custa **2–3× mais** e acontece sob pressão.
+- **Oportunidades perdidas:** sem base moderna, cada novo projeto nasceria mais caro e mais lento.
 
 ---
 
@@ -142,9 +142,9 @@ O ganho não é só evitar problema — é **construir uma plataforma**:
 
 ## 10. Próxima frente — Infraestrutura (banco + arquivos)
 
-A camada de **aplicação** está modernizada. Falta tirar do **Windows legado** as duas últimas peças de **infraestrutura compartilhada** — a frente que **fecha o ciclo**:
+A camada de **aplicação** está modernizada. A próxima etapa leva as duas peças de **infraestrutura compartilhada** para a mesma base — a frente que **fecha o ciclo**:
 
-- 🗄️ **Banco de dados** — hoje **SQL Server 2017 em Windows**. Como o **2017 já roda em Linux**, a saída é de **baixo atrito**: SQL Server em Linux/contêiner (**mesma versão, mesmos stored procedures**), depois eventual **PostgreSQL open-source (licença R$ 0)**.
+- 🗄️ **Banco de dados** — o **SQL Server 2017 já roda nativamente em Linux**: migração de **baixo atrito** (**mesma versão, mesmos stored procedures**), depois eventual **PostgreSQL open-source (licença R$ 0)**.
 - 📁 **Servidor de arquivos** — hoje em **Windows** → **SFTP/FTPS** ou **Object Storage** em Linux, com **transferência cifrada de ponta a ponta** e escalabilidade. A camada de acesso já está em biblioteca moderna, então repontar é simples.
 
 > 📄 **Plano completo, opções e próximos passos → [`infraestrutura/`](infraestrutura/RESUMO-EXECUTIVO-infraestrutura.md).**
@@ -153,15 +153,15 @@ Também no radar: **aposentar ColdFusion 11 + Windows Server 2012 R2** conforme 
 
 ### 🏗️ O ERP interno — o resgate já começou
 
-Depois da infraestrutura, o alvo de maior impacto **interno** é o **ERP administrativo/financeiro** — o sistema que a própria equipe do Instituto usa todos os dias e que hoje é **a peça mais deteriorada do parque**:
+Depois da infraestrutura, o alvo de maior impacto **interno** é o **ERP administrativo/financeiro** — o sistema que a própria equipe do Instituto usa todos os dias, e **o mais antigo do parque**:
 
-| Situação do ERP hoje | O que o programa muda para ele |
+| Desafio | Como o programa resolve |
 |---|---|
-| Mesma fundação morta (ColdFusion 11 + Windows legado) | A **plataforma nova já existe** — contêineres, CI, autenticação, WAF/SIEM/SELinux, host consolidado. **Não começa do zero.** |
-| Anos sem evolução; telas impossíveis de melhorar | Frontend moderno (React/TypeScript) com **editor e UX já padronizados** nas frentes entregues. |
-| Manutenção cada vez mais cara e arriscada | **Método provado no pior caso** (SIEJ, ~20 anos de legado): mesmo banco, lado a lado, **módulo a módulo, com rollback**. |
-| Dependência de pouquíssimas pessoas | Stack padrão de mercado — **qualquer contratação nova já produz**. |
-| Quem sofre é a própria equipe, todos os dias | Cada módulo resgatado vira **produtividade interna imediata** — o retorno é diário e dentro de casa. |
+| Plataforma da geração anterior (ColdFusion) | A **plataforma nova já existe** — contêineres, CI, autenticação, WAF/SIEM/SELinux, host consolidado. **Não começa do zero.** |
+| Evolução lenta e custosa | Frontend moderno com **editor e UX já padronizados** nas frentes entregues. |
+| Manutenção de alto custo | **Método provado no pior caso** (SIEJ, ~20 anos de legado): mesmo banco, lado a lado, **módulo a módulo, com rollback**. |
+| Conhecimento concentrado em poucas pessoas | Stack padrão de mercado — **qualquer contratação nova já produz**. |
+| Impacto direto na rotina da equipe | Cada módulo modernizado vira **produtividade interna imediata** — o retorno é diário e dentro de casa. |
 
 > O ERP é o **mesmo filme do SIEJ com o roteiro já escrito** — e cada frente entregue **barateou** essa reconstrução, porque plataforma, esteira e equipe treinada já existem.
 
@@ -182,7 +182,7 @@ As duas metades do ERP já têm **diagnóstico completo — e o resgate já come
 
 ---
 
-> **Em resumo:** seis sistemas críticos já foram modernizados e estão em produção, com **licença de software R$ 0**, **segurança em profundidade**, **conformidade LGPD** e um **método provado e reversível**. A economia é estrutural e recorrente; o risco do legado, contínuo. O programa **já entrega valor hoje** — e é a base dos próximos anos.
+> **Em resumo:** seis sistemas críticos já foram modernizados e estão em produção, com **licença de software R$ 0**, **segurança em profundidade**, **conformidade LGPD** e um **método provado e reversível**. A economia é estrutural e recorrente. O programa **já entrega valor hoje** — e é a base dos próximos anos.
 
 ---
 

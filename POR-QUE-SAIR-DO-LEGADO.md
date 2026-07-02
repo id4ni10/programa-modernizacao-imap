@@ -15,7 +15,7 @@
 | **Adobe ColdFusion 11** | 2019 (central) / 2021 (estendido) | ~**5–6 anos sem correção de segurança** · licença Adobe cara e recorrente · mercado de profissionais secando |
 | **Windows Server 2012 R2** | **10/10/2023** | **Sem atualizações de segurança** · só ESU pago · licença + CALs recorrentes |
 
-> Enquanto essas duas peças ficam de pé, o programa **não fecha o ciclo**: sobra risco, sobra licença e sobra dependência de tecnologia que **ninguém mais mantém**.
+> Aposentar essas duas peças **fecha o ciclo**: sai o risco, sai a licença e sai a dependência de tecnologia que **ninguém mais mantém**.
 
 ---
 
@@ -39,8 +39,8 @@
 
 ## ⚖️ Conformidade & LGPD
 
-- Operar sobre software **sem suporte** enfraquece qualquer defesa de "medidas de segurança adequadas" exigida pela **LGPD** — e é **indefensável em auditoria**.
-- A base nova é **suportada, monitorada e auditável**, com **trilha de evidências** (relatórios do SIEM).
+- A base nova **fortalece a posição de conformidade**: é exatamente o que a defesa de "medidas de segurança adequadas" exigida pela **LGPD** pede.
+- Ambiente **suportado, monitorado e auditável**, com **trilha de evidências** (relatórios do SIEM).
 - Regulariza também questões de **licenciamento** de plataforma e SO.
 
 ## 👥 Talento & Pessoas — reduzir o risco humano
@@ -73,13 +73,13 @@
 
 ## ⏳ O custo de **ficar** (o outro lado da moeda)
 
-Manter o legado **não é** custo zero:
+Manter o legado **não seria** custo zero:
 
-- **Risco de segurança e de sanção (LGPD)** cresce **a cada dia** sem patch.
-- **Licenças recorrentes** continuam sendo pagas sobre tecnologia **morta**.
-- **Dependência crítica** de poucos profissionais de ColdFusion.
-- **Migração futura fica mais cara:** a reescrita **emergencial** (depois de um incidente) custa **2–3× mais** e acontece sob pressão.
-- **Perda de competitividade:** cada novo projeto nasce mais lento e mais caro sobre uma base obsoleta.
+- **Risco de segurança** cresceria **a cada dia** sem patch.
+- **Licenças recorrentes** continuariam sendo pagas sobre tecnologia **morta**.
+- **Dependência crítica** de poucos profissionais de ColdFusion se aprofundaria.
+- **Migração futura ficaria mais cara:** a reescrita **emergencial** (depois de um incidente) custa **2–3× mais** e acontece sob pressão.
+- **Perda de competitividade:** cada novo projeto nasceria mais lento e mais caro sobre uma base obsoleta.
 
 ---
 
@@ -90,13 +90,13 @@ Manter o legado **não é** custo zero:
 | Segurança | Sem patches há anos | **Mantido + WAF + SIEM + SELinux** |
 | Custo de licença | Adobe CF + Windows + CALs + ESU | **R$ 0 (open-source)** |
 | Compute / manutenção | Pesado, manual | **Leve, automatizado, consolidado** |
-| Conformidade (LGPD) | Indefensável | **Auditável, com trilha de evidências** |
+| Conformidade (LGPD) | Esforço manual | **Auditável, com trilha de evidências** |
 | Talento | Escasso e caro (alto *bus factor*) | **Abundante e acessível** |
 | Lock-in | Adobe + Windows | **Nenhum (multiplataforma)** |
 | Futuro | Dívida crescente | **Plataforma reutilizável, +10 anos** |
 
 ---
 
-> **Em uma frase:** sair do ColdFusion 11 e do Windows Server 2012 R2 **remove um risco que já existe**, **corta custo recorrente** e **destrava o futuro** — e já provamos, frente a frente, que dá para fazer isso **sem parar a operação e de forma reversível**.
+> **Em uma frase:** sair do ColdFusion 11 e do Windows Server 2012 R2 **removeu um risco real**, **cortou custo recorrente** e **destravou o futuro** — e provamos, frente a frente, que dá para fazer isso **sem parar a operação e de forma reversível**.
 >
 > Voltar ao portfólio → **[Programa de Modernização IMAP](PROGRAMA-MODERNIZACAO-IMAP.md)**.

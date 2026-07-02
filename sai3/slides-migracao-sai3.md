@@ -23,7 +23,7 @@
 | 🟢 **Segurança reforçada** | camadas que o sistema não tinha antes |
 | 🟢 **minutos** | para reverter, se necessário |
 
-> **"Não é um risco novo. É um risco que já existe — e que estamos removendo."**
+> **"Não é um risco novo. É um risco que já existia — e que removemos."**
 
 ---
 
@@ -84,8 +84,8 @@ A nova stack é **gratuita por construção** — o licenciamento praticamente d
 
 ## Slide 7 — 🔧 Em andamento (próximas frentes)
 
-- **Banco de dados (SQL Server):** ainda em Windows legado → migração em andamento
-- **Servidor de arquivos (FTP):** ainda em Windows legado → a modernizar
+- **Banco de dados (SQL Server):** migração para Linux em andamento
+- **Servidor de arquivos:** modernização planejada (SFTP/Object Storage)
 - **Painel administrativo (MVC):** próxima fase — *lift* para ASP.NET Core
 - **API pública: 100% portada e validada** ✅
 

@@ -6,41 +6,41 @@
 
 ---
 
-## O que ainda está no legado
+## Escopo desta frente
 
-As aplicações já foram modernizadas (SAI3, DIOF, NFS-e, SIEJ…), mas duas peças de **infraestrutura compartilhada** ainda rodam sobre **Windows legado**:
+As aplicações já foram modernizadas (SAI3, DIOF, NFS-e, SIEJ…). Esta frente leva as duas peças de **infraestrutura compartilhada** para a mesma base moderna:
 
-| Componente | Hoje | Problema |
+| Componente | Movimento | Ganho |
 |---|---|---|
-| **Banco de dados** | **SQL Server 2017** em **Windows Server** | SO legado; licenciamento; ponto único usado por todas as frentes |
-| **Servidor de arquivos** | **FTP** em **Windows Server** (mídias, documentos, PDFs de atos oficiais) | SO legado; a modernização traz **transferência cifrada** e escalabilidade |
+| **Banco de dados** | **SQL Server 2017** → **Linux (OL9)** | mesma engine, sem reescrita; **elimina licença Windows Server + CALs** |
+| **Servidor de arquivos** | FTP → **SFTP / Object Storage em Linux** (mídias, documentos, PDFs de atos oficiais) | **transferência cifrada de ponta a ponta**, escalável |
 
-> Enquanto essas peças ficam no Windows, o programa **não fecha o ciclo** — sobra licença, sobra superfície de ataque e sobra dependência de um SO sem suporte.
+> É a frente que **fecha o ciclo do programa**: unifica a base, elimina o que resta de licença desnecessária e simplifica a operação.
 
 ---
 
 ## 🗄️ Migração do Banco de Dados (SQL Server → Oracle Linux 9)
 
-**Fato que facilita tudo:** o banco já é **SQL Server 2017**, que **roda nativamente em Linux**. Ou seja, dá para sair do Windows **sem trocar de versão e sem reescrever** nada.
+**Fato que facilita tudo:** o banco já é **SQL Server 2017**, que **roda nativamente em Linux**. Ou seja, dá para concluir a migração **sem trocar de versão e sem reescrever** nada.
 
 **Caminho, do menor ao maior ganho:**
 
 1. **SQL Server em Linux (OL9)** — *menor atrito.* Mesma versão, **mesmos stored procedures**, mesma aplicação. **Elimina a licença de Windows Server + CALs** no host de banco. Mantém 100% de compatibilidade.
 
-**Ganhos:** fim do Windows no host de banco · patches/segurança contínuos · consolidação · backups e HA modernos · **caminho para custo de licença R$ 0**.
+**Ganhos:** base unificada em Linux · patches/segurança contínuos · consolidação · backups e HA modernos · **caminho para custo de licença R$ 0**.
 
 ---
 
 ## 📁 Migração do Servidor de Arquivos (FTP → Linux)
 
-O servidor de arquivos serve mídias, documentos e **PDFs de atos oficiais**. Modernizá-lo tira mais uma peça do Windows legado e **eleva o padrão da transferência** — cifragem de ponta a ponta e integração direta com a stack em contêineres.
+O servidor de arquivos serve mídias, documentos e **PDFs de atos oficiais**. Modernizá-lo unifica a stack em Linux e **eleva o padrão da transferência** — cifragem de ponta a ponta e integração direta com a stack em contêineres.
 
 **Caminho:**
 
 1. **SFTP / FTPS em Linux** — transferência **cifrada**, mesmo modelo de pastas, integra direto com os apps já em Linux.
 2. **Armazenamento de objetos** (OCI Object Storage / S3-compatível) com **URLs assinadas** — escalável, com CDN e sem servidor de arquivos para manter.
 
-**Ganhos:** fim do Windows · **transferência cifrada** (segurança/LGPD) · escalabilidade · integração natural com a stack em contêineres. *A camada de acesso a arquivos das aplicações já foi reescrita em biblioteca moderna (FluentFTP), então repontar para o novo destino é simples.*
+**Ganhos:** stack unificada em Linux · **transferência cifrada** (segurança/LGPD) · escalabilidade · integração natural com a stack em contêineres. *A camada de acesso a arquivos das aplicações já foi reescrita em biblioteca moderna (FluentFTP), então repontar para o novo destino é simples.*
 
 ---
 
@@ -72,7 +72,7 @@ O servidor de arquivos serve mídias, documentos e **PDFs de atos oficiais**. Mo
 | Risco | Mitigação |
 |---|---|
 | Diferenças de comportamento do banco | **SQL Server em Linux** mantém a mesma engine → sem risco de reescrita. Validação com a **mesma suíte usada no SAI3** (640 requisições). |
-| Downtime na virada | Migração com **réplica/espelho**, cutover em janela e **rollback** para o Windows. |
+| Downtime na virada | Migração com **réplica/espelho**, cutover em janela e **rollback** imediato para o ambiente anterior. |
 | Repontar os apps para o novo FTP | Camada de arquivos já em biblioteca moderna → troca de destino simples. |
 
 ---
@@ -83,7 +83,7 @@ O servidor de arquivos serve mídias, documentos e **PDFs de atos oficiais**. Mo
 2. **Validar** com a suíte de compatibilidade já existente (a mesma que comprovou o SAI3).
 3. **Cutover do banco** em janela, com réplica e rollback.
 4. **Subir SFTP / Object Storage** e **repontar** os apps (Handler de mídias/documentos).
-5. **Desligar os hosts Windows legados** (banco e FTP) — encerrando o ciclo do programa.
+5. **Desativar os hosts antigos** — encerrando o ciclo do programa.
 
 ---
 
@@ -93,4 +93,4 @@ SQL Server (em Linux) · PostgreSQL (roadmap) · Docker · Oracle Linux 9 · OCI
 
 ---
 
-> **Em resumo:** esta é a frente que **fecha o ciclo** da modernização — tira as duas últimas peças (banco e arquivos) do Windows legado, elimina o que resta de licença e superfície de risco, e abre caminho para um banco **open-source (licença R$ 0)** no futuro. O SQL Server já é 2017 (roda em Linux), então o primeiro passo é **de baixo atrito**.
+> **Em resumo:** esta é a frente que **fecha o ciclo** da modernização — leva as duas últimas peças (banco e arquivos) para a base unificada e elimina o que resta de licença desnecessária, e abre caminho para um banco **open-source (licença R$ 0)** no futuro. O SQL Server já é 2017 (roda em Linux), então o primeiro passo é **de baixo atrito**.

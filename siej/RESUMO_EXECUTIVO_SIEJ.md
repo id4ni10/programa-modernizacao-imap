@@ -47,7 +47,7 @@ Sistema **central com ~20 anos de legado**, que diagrama e gere publicações of
 - **🚀 Modernização.** **~20 anos** de ColdFusion 11 dão lugar a **FastAPI + React/TypeScript/Vite**: editor **WYSIWYG** e **configuração editável** pelos operadores (formatos/margens por veículo, antes "chumbados" no código). O **banco não muda** — o novo backend lê **o mesmo SQL Server**.
 - **💸 Custos.** Fim da **licença Adobe CF + Windows**; Python/React/Docker **open-source**. A fundação (FastAPI · React · Docker · CI · auth IMAP) é **reutilizável** — cada sistema novo nasce **mais barato e mais rápido**.
 - **🧱 Endurecimento (hardening).** **Autenticação JWT em cookie httpOnly** (preservando o cartão de acesso), serviços `siej-web`/`siej-api` em **contêineres Linux sob SELinux**, **testes que bloqueiam o deploy** (52 no frontend + suíte no backend).
-- **🛡️ Segurança & salvaguarda.** O sistema trata **dados de cidadãos** — risco de conformidade **hoje**, não no futuro. Agora há **detecção automática de irregularidades (CPF/RG — LGPD)** com **registro permanente**, além de **WAF, SIEM (Wazuh) e TLS automático**.
+- **🛡️ Segurança & salvaguarda.** O sistema trata **dados de cidadãos** — e agora conta com **detecção automática de irregularidades (CPF/RG — LGPD)** com **registro permanente**, além de **WAF, SIEM (Wazuh) e TLS automático**.
 - **🧭 Futuro já pavimentado e provado.** **No ar**, ligado ao banco de produção, com **Financeiro em paridade verificada contra o SCP legado**. A migração segue **módulo a módulo**, priorizando o de maior risco — com rollback imediato.
 
 ## 📍 Provas (em produção)

@@ -25,13 +25,13 @@ _[Responsável] · [Data]_
 
 ---
 
-## 1 · O risco é hoje, não amanhã
+## 1 · O risco que atacamos primeiro
 
-- **6 anos sem correção de segurança** no ColdFusion.
-- **LGPD:** exposição a **sanções previstas em lei** ao operar software sem suporte.
-- Rodar software fora de suporte **enfraquece qualquer defesa** de "medidas de segurança adequadas".
+- O ColdFusion 11 saiu de suporte em 2021 (fato público de produto) — **por isso o SIEJ foi migrado primeiro**.
+- **LGPD:** a base moderna sustenta a conformidade com **trilha auditável**.
+- A base nova **sustenta com folga** a defesa de "medidas de segurança adequadas".
 
-> Não é "se moderniza um dia". É **passivo de risco ativo no balanço.**
+> Modernizar primeiro o sistema mais antigo foi decisão estratégica — **e já está entregue.**
 
 ---
 

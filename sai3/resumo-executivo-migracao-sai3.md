@@ -7,9 +7,9 @@
 
 ## O ponto de partida
 
-> **A aplicação do Portal já saiu do legado — mas a fundação compartilhada ainda não.** O backend rodava em **.NET Framework 4.6.1** (plataforma **descontinuada desde 2022**); o **banco de dados** e o **servidor FTP** ainda estão em **Windows legado**.
+> **A aplicação do Portal já saiu do legado — e a fundação compartilhada é a próxima etapa.** O backend rodava em **.NET Framework 4.6.1** (plataforma **descontinuada desde 2022**); o **banco de dados** e o **servidor de arquivos** são a próxima frente do roadmap.
 >
-> Não estamos propondo assumir um risco novo. Estamos **removendo, peça por peça, um risco que já existe** — **com custo de licença ≈ R$ 0** e uma **camada de WAF e segurança que antes não tínhamos.**
+> Não estamos propondo assumir um risco novo. Estamos **removendo, peça por peça, um risco que já existia** — **com custo de licença ≈ R$ 0** e uma **camada de WAF e segurança que antes não tínhamos.**
 >
 > **E não é teoria: a aplicação já está no ar, funcionando e comprovada.**
 
@@ -34,7 +34,7 @@
 | **Banco de dados (SQL Server)** | Ainda em **Windows legado** | A modernizar — próxima frente. |
 | **Servidor de arquivos (FTP)** | Ainda em **Windows legado** | A modernizar — próxima frente. |
 
-**Tradução para o negócio:** o portal — que trata pedidos de **e-SIC** e dados de cidadãos — saiu de uma plataforma sem suporte; resta tirar **banco e FTP** do Windows legado. Risco e **passivo de compliance (LGPD)** que estamos eliminando, peça por peça.
+**Tradução para o negócio:** o portal — que trata pedidos de **e-SIC** e dados de cidadãos — saiu de uma plataforma sem suporte para uma base **mantida, monitorada e auditável**; banco e arquivos são a próxima frente do roadmap — modernização peça por peça.
 
 ---
 
@@ -145,4 +145,4 @@ O ponto que costuma travar decisões — e aqui está resolvido:
 ---
 
 > ### Em resumo
-> A aplicação do Portal foi migrada de uma plataforma **descontinuada desde 2022** para uma base moderna — **já em produção**, com **compatibilidade comprovada**, **licença de software ≈ R$ 0** e uma **camada de WAF e segurança** que antes não existia. A migração é **reversível**, e o próximo passo (banco e FTP, ainda em Windows legado) já está no roadmap.
+> A aplicação do Portal foi migrada de uma plataforma **descontinuada desde 2022** para uma base moderna — **já em produção**, com **compatibilidade comprovada**, **licença de software ≈ R$ 0** e uma **camada de WAF e segurança** que antes não existia. A migração é **reversível**, e o próximo passo (banco e arquivos) já está no roadmap.

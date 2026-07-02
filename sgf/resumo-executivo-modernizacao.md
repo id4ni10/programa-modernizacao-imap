@@ -12,7 +12,7 @@
 
 O **SGF (Sistema de Gestão Financeira)** é a metade financeira do ERP que sustenta o dia a dia do Instituto: registra **vendas e contratos**, gera e controla **boletos e faturas**, concilia **depósitos e remessas bancárias** e calcula **comissões** de consultores e representantes. É onde o dinheiro do IMAP entra, é cobrado e é conciliado.
 
-Roda sobre **ColdFusion + Windows Server + SQL Server** — a **mesma fundação morta** já aposentada nas outras seis frentes. É a peça mais crítica ainda presa ao legado.
+Nasceu na geração ColdFusion e agora recebe **a mesma base moderna já provada nas outras seis frentes** — o resgate já começou.
 
 ## O tamanho do resgate (medido no código legado)
 

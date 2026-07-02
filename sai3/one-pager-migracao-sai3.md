@@ -3,7 +3,7 @@
 
 ---
 
-**O problema:** o backend do portal rodava em **.NET Framework 4.6.1** — plataforma **descontinuada desde 2022** — em **Windows/IIS**. E o **banco de dados** e o **servidor FTP** ainda estão em **Windows legado**. Risco de segurança e de conformidade (LGPD).
+**O problema:** o backend do portal rodava em **.NET Framework 4.6.1** — plataforma **descontinuada desde 2022** — em **Windows/IIS**. O **banco de dados** e o **servidor de arquivos** são a próxima frente do roadmap.
 
 **A solução (já no ar):** a aplicação **já foi migrada** para a nova API **sai3** em **.NET 10 / Oracle Linux 9**, **contrato 100% compatível** com o frontend Angular atual. Banco e FTP são as **próximas frentes**.
 

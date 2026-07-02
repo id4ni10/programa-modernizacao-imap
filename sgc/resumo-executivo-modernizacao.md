@@ -12,7 +12,7 @@
 
 O **SGC (Sistema de Gestão de Clientes)** é a metade de relacionamento do ERP interno: cadastro de **clientes e contatos**, **contratos** e **propostas comerciais**, catálogo de **produtos e módulos** e a central de **atendimentos** (tickets) por canal, categoria e responsável. É a memória de quem é cliente, o que contratou e o histórico de suporte.
 
-Roda sobre **ColdFusion + Windows Server + SQL Server** — a **mesma fundação morta** já aposentada nas outras seis frentes, e é o par comercial do **[SGF](../sgf/resumo-executivo-modernizacao.md)** no ERP interno.
+Nasceu na geração ColdFusion e agora recebe **a mesma base moderna já provada nas outras seis frentes** — é o par comercial do **[SGF](../sgf/resumo-executivo-modernizacao.md)** no resgate do ERP interno, já em andamento.
 
 ## O tamanho do resgate (medido no código legado)
 

@@ -37,7 +37,7 @@
 # 🏗️ INFRAESTRUTURA
 
 ## 5. Sistema operacional moderno — Oracle Linux 9 vs Windows legado
-- **SAI2:** rodava em **Windows / IIS** (legado). Além disso, a **infraestrutura compartilhada** (banco e FTP) ainda está em **Windows legado** — frente seguinte.
+- **SAI2:** rodava em **Windows / IIS** (legado). A **infraestrutura compartilhada** (banco e arquivos) tem frente própria no roadmap.
 - **SAI3:** **Oracle Linux 9** — **suporte até 2032**, patches contínuos, *footprint* menor, mais estável para serviço de longa duração.
 - **Por que importa:** sai do mundo Windows/IIS para um SO **moderno, gratuito e auditável**; abre caminho para aposentar o Windows legado (banco/FTP) na sequência.
 - **Evidência:** SAI3 **em produção** sobre Oracle Linux 9.
@@ -88,7 +88,7 @@
 - **Evidência:** Wazuh implantado; SELinux *enforcing* no host.
 
 ## 12. Conformidade e postura (LGPD) + SO com patches
-- **SAI2:** SO sem patches (EOL) — **indefensável em auditoria**; conformidade apenas declarada.
+- **SAI2:** conformidade apenas declarada.
 - **SAI3:** SO **com patches contínuos** + **trilha de evidências** (relatórios de conformidade do Wazuh: LGPD/PCI/NIST) + TLS automático.
 - **Por que importa:** o portal trata **dados de cidadãos e pedidos de e-SIC** — conformidade **comprovável** deixa de ser risco e vira ativo.
 - **Evidência:** stack auditável; relatórios de conformidade disponíveis.
@@ -122,7 +122,7 @@
 | 9 | Custos | Eficiência | .NET Fwk pesado | **.NET 10 → menos CPU/RAM** |
 | 10 | Segurança | WAF + app | IIS limitado, CORS aberto | **ModSecurity/OWASP + CORS/rate/JWT** |
 | 11 | Segurança | Monitoramento/hardening | Sem SIEM/MAC | **Wazuh + SELinux** |
-| 12 | Segurança | Conformidade (LGPD) | SO sem patch, declarada | **Patches + trilha auditável** |
+| 12 | Segurança | Conformidade (LGPD) | declarada | **Patches + trilha auditável** |
 
 ---
 

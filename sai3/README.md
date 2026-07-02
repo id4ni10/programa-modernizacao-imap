@@ -18,7 +18,7 @@
 | `assets/` | imagens (capa, segurança, antes/depois, fundação) |
 
 ## 🎯 Os fatos principais
-- 🔴 **.NET Framework 4.6.1 descontinuado desde 2022** — aplicação **já migrada**; **banco + FTP** ainda em Windows legado (próxima frente).
+- 🔴 **.NET Framework 4.6.1 descontinuado desde 2022** — aplicação **já migrada**; **banco + arquivos**: próxima frente do roadmap.
 - 🟢 **640 requisições reais testadas · 0 incompatibilidades** (SAI3 × SAI2, dados reais, 2 municípios).
 - 🟢 **Custo de licença ≈ R$ 0** — SO, runtime, WAF, SIEM e bibliotecas: tudo gratuito/open-source.
 - 🟢 **Segurança reforçada** — WAF, SIEM (Wazuh), SELinux, TLS automático.

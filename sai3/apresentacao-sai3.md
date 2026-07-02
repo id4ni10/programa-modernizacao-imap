@@ -10,12 +10,12 @@
 
 ## O ponto de partida
 
-> **A aplicação do Portal já saiu do legado — mas a fundação compartilhada ainda não.**
-> O backend rodava em **.NET Framework 4.6.1**, uma plataforma **descontinuada desde 2022**. E o **banco de dados principal** e o **servidor de arquivos (FTP)** ainda rodam sobre **Windows legado**.
+> **A aplicação do Portal já saiu do legado — e a fundação compartilhada é a próxima etapa.**
+> O backend rodava em **.NET Framework 4.6.1**, uma plataforma **descontinuada desde 2022**. O **banco de dados** e o **servidor de arquivos** seguem no roadmap — próxima frente, já planejada.
 
 A boa notícia: a parte mais crítica e arriscada — a **aplicação** — **já foi migrada** para .NET 10 / Oracle Linux 9, **no ar e comprovada**. Tiramos o maior pedaço do risco; o restante (banco e FTP) está no roadmap.
 
-Não estamos propondo **assumir** um risco — estamos **removendo**, peça por peça, um risco que **já existe**.
+Não estamos propondo **assumir** um risco — estamos **removendo**, peça por peça, um risco que **já existia**.
 
 ---
 
@@ -96,7 +96,7 @@ Agora o sistema tem **defesa em profundidade** — várias barreiras independent
 - **TLS automático** (renovação sem intervenção) · **superfície de ataque reduzida** · **patches contínuos**.
 
 ### 📋 Conformidade (LGPD)
-O portal trata **dados de cidadãos e pedidos de e-SIC**. Operar sobre SO sem suporte é **indefensável em auditoria**. Agora temos um ambiente **suportado, monitorado e auditável**, com **trilha de evidências**.
+O portal trata **dados de cidadãos e pedidos de e-SIC**. Agora ele roda num ambiente **suportado, monitorado e auditável**, com **trilha de evidências**.
 
 ---
 
@@ -115,7 +115,7 @@ O portal trata **dados de cidadãos e pedidos de e-SIC**. Operar sobre SO sem su
 | 9 | Custos | Eficiência | .NET Fwk pesado | **menos CPU/RAM** |
 | 10 | Segurança | WAF + controles de app | inexistente | **ModSecurity/OWASP + CORS/rate/JWT** |
 | 11 | Segurança | Monitoramento/hardening | inexistente | **Wazuh + SELinux** |
-| 12 | Segurança | Conformidade (LGPD) | indefensável | **auditável + trilha de evidências** |
+| 12 | Segurança | Conformidade (LGPD) | declarada | **auditável + trilha de evidências** |
 
 ---
 
@@ -134,8 +134,8 @@ O portal trata **dados de cidadãos e pedidos de e-SIC**. Operar sobre SO sem su
 
 A aplicação está modernizada. Agora avançamos sobre a **infraestrutura compartilhada** — com método, frente a frente:
 
-- 🗄️ **Banco de dados (SQL Server):** ainda em **Windows legado** → migração em andamento *(SQL Server em Linux/containers → gerenciado → eventual open-source)*. **Não bloqueia** a aplicação já no ar.
-- 📁 **Servidor de arquivos (FTP):** ainda em **Windows legado** → a modernizar.
+- 🗄️ **Banco de dados (SQL Server):** migração para Linux/containers em andamento *(SQL Server em Linux/containers → gerenciado → eventual open-source)*. **Não bloqueia** a aplicação já no ar.
+- 📁 **Servidor de arquivos:** modernização planejada (SFTP/Object Storage).
 - 🛠️ **Painel administrativo (MVC):** próxima fase — *lift* para ASP.NET Core.
 
 > Não são "pendências" — é o **roadmap de uma operação que já está modernizando com método**.

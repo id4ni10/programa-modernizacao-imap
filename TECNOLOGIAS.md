@@ -143,7 +143,7 @@ Cada tecnologia não é uma escolha estética — ela produz um **efeito concret
 - **Software:** base estável e padrão de mercado para serviços de longa duração.
 - **Infra:** **suporte até 2032**, footprint enxuto, pronto para automação e escala; shapes ARM/Ampere disponíveis.
 - **Custo:** **licença de SO R$ 0** (fim de Windows Server + CALs); instâncias mais baratas e dimensionáveis.
-- **Segurança/LGPD:** patches contínuos, **SELinux** (controle de acesso mandatório), hardening que o mundo Windows legado não tinha.
+- **Segurança/LGPD:** patches contínuos, **SELinux** (controle de acesso mandatório), hardening no nível do kernel.
 
 ## Terraform (Infraestrutura como Código)
 - **Software:** a infraestrutura vira **código versionado e revisável**.
