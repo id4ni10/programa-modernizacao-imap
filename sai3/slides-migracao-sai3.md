@@ -17,7 +17,7 @@
 
 | | |
 |---|---|
-| 🔴 **Plataforma morta** | .NET Framework 4.6.1 descontinuado desde 2022 (já migrado) |
+| 🔴 **Plataforma descontinuada** | .NET Framework 4.6.1 descontinuado desde 2022 (já migrado) |
 | 🟢 **640** | requisições reais testadas — **0 incompatibilidades** |
 | 🟢 **Licença ≈ R$ 0** | SO, runtime, WAF e SIEM: tudo gratuito/open-source |
 | 🟢 **Segurança reforçada** | camadas que o sistema não tinha antes |

@@ -3,7 +3,7 @@
 # Por que sair do ColdFusion 11 e do Windows Server 2012 R2
 ## As vantagens de aposentar a fundação legada
 
-> Duas tecnologias sustentavam quase todos os sistemas do IMAP — e **as duas estão mortas**.
+> Duas tecnologias sustentavam quase todos os sistemas do IMAP — e **as duas encerraram seu ciclo de vida**.
 > Sair delas é, isoladamente, **a decisão de maior valor** do programa de modernização: reduz risco, corta custo recorrente e destrava o futuro. Este documento reúne **todas as vantagens** dessa saída.
 
 ---
@@ -12,7 +12,7 @@
 
 | Tecnologia | Fim de suporte | Situação hoje |
 |---|---|---|
-| **Adobe ColdFusion 11** | 2019 (central) / 2021 (estendido) | ~**5–6 anos sem correção de segurança** · licença Adobe cara e recorrente · mercado de profissionais secando |
+| **Adobe ColdFusion 11** | 2019 (central) / 2021 (estendido) | ~**5–6 anos sem correção de segurança** · licença Adobe cara e recorrente · mercado de profissionais cada vez mais restrito |
 | **Windows Server 2012 R2** | **10/10/2023** | **Sem atualizações de segurança** · só ESU pago · licença + CALs recorrentes |
 
 > Aposentar essas duas peças **fecha o ciclo**: sai o risco, sai a licença e sai a dependência de tecnologia que **ninguém mais mantém**.
@@ -45,7 +45,7 @@
 
 ## 👥 Talento & Pessoas — reduzir o risco humano
 
-- **Fim do *bus factor*:** o mercado de desenvolvedores ColdFusion está **secando** — depender de poucos profissionais é risco operacional real.
+- **Fim do *bus factor*:** o mercado de desenvolvedores ColdFusion é cada vez mais **restrito** — depender de poucos profissionais é risco operacional real.
 - **Mão de obra abundante:** Python, .NET, React e TypeScript estão entre as tecnologias **mais usadas do mundo** → contratar, treinar e substituir é **simples e barato**.
 - **Retenção:** equipe trabalhando com **stack atual** (não legado) é mais motivada e mais fácil de manter.
 
@@ -76,7 +76,7 @@
 Manter o legado **não seria** custo zero:
 
 - **Risco de segurança** cresceria **a cada dia** sem patch.
-- **Licenças recorrentes** continuariam sendo pagas sobre tecnologia **morta**.
+- **Licenças recorrentes** continuariam sendo pagas sobre tecnologia **de ciclo encerrado**.
 - **Dependência crítica** de poucos profissionais de ColdFusion se aprofundaria.
 - **Migração futura ficaria mais cara:** a reescrita **emergencial** (depois de um incidente) custa **2–3× mais** e acontece sob pressão.
 - **Perda de competitividade:** cada novo projeto nasceria mais lento e mais caro sobre uma base obsoleta.

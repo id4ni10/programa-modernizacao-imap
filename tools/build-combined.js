@@ -42,7 +42,7 @@ function absImg(md, baseDir) {
 
 const cover = `
 <section class="cover">
-  <img class="cimg" src="file:///tmp/pdfbuild/opt/diamante.jpg" alt="capa"/>
+  <img class="cimg" src="file:///tmp/pdfbuild/opt/fundacao.jpg" alt="capa"/>
   <h1 class="ctitle">Programa de Modernização IMAP</h1>
   <div class="csub">Portfólio executivo — sistemas críticos migrados para uma base moderna, open-source e em nuvem</div>
   <div class="chips">
@@ -64,7 +64,7 @@ const cover = `
   <div class="toc">
     <h2>Sumário</h2>
     <ol>
-      <li><b>O Pitch</b> — <span>o problema, a revelação, a parede de provas e o pedido</span></li>
+      <li><b>O Pitch</b> — <span>o desafio, a virada, a parede de provas e o pedido</span></li>
       <li><b>Visão do portfólio</b> — <span>o programa em uma página</span></li>
       <li><b>Programa de Modernização IMAP</b> — <span>método comum, custos, segurança, continuidade</span></li>
       <li><b>Por que sair do ColdFusion 11 + Windows Server 2012 R2</b> — <span>todas as vantagens de aposentar o legado</span></li>

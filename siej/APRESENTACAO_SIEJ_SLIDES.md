@@ -25,7 +25,7 @@ _[Responsável] · [Data]_
 
 ---
 
-## 1 · O risco que atacamos primeiro
+## 1 · A prioridade que enfrentamos primeiro
 
 - O ColdFusion 11 saiu de suporte em 2021 (fato público de produto) — **por isso o SIEJ foi migrado primeiro**.
 - **LGPD:** a base moderna sustenta a conformidade com **trilha auditável**.
@@ -41,7 +41,7 @@ Sair do ColdFusion, por si só, **já é o melhor negócio** — independente da
 
 - 🔓 **Fim do vendor lock-in** de um produto sem futuro.
 - 💸 **Fim do licenciamento** Adobe ColdFusion (caro e recorrente).
-- 👥 **Fim da dependência** de um mercado de profissionais que está secando.
+- 👥 **Fim da dependência** de um mercado de profissionais cada vez mais restrito.
 - 🧱 **Fim do acúmulo** de dívida técnica de 20 anos.
 
 > Cada dia a mais no ColdFusion é **custo e risco** que não voltam.

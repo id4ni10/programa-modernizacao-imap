@@ -23,7 +23,7 @@ Não estamos propondo **assumir** um risco — estamos **removendo**, peça por 
 
 | | |
 |---|---|
-| 🔴 **Plataforma morta** | .NET Framework 4.6.1 **descontinuado desde 2022** — aplicação **já migrada** |
+| 🔴 **Plataforma descontinuada** | .NET Framework 4.6.1 **descontinuado desde 2022** — aplicação **já migrada** |
 | 🟢 **Compatibilidade comprovada** | **640 requisições reais testadas** (2 municípios, dados reais) → **0 incompatibilidades** |
 | 🟢 **Custo de licença ≈ R$ 0** | quase **toda** a nova stack é gratuita / open-source |
 | 🟢 **Segurança reforçada** | camadas de segurança que o sistema **não tinha antes** |
@@ -146,7 +146,7 @@ A aplicação está modernizada. Agora avançamos sobre a **infraestrutura compa
 
 ![fundação](assets/fundacao.png)
 
-Não é só apagar incêndio: é **construir base**. Stack atual e suportada **até 2032**, multiplataforma, segura por padrão e barata de operar — pronta para crescer (containers, cloud, novos módulos).
+Não é só resolver o presente: é **construir base**. Stack atual e suportada **até 2032**, multiplataforma, segura por padrão e barata de operar — pronta para crescer (containers, cloud, novos módulos).
 
 ### Recomendação
 1. **Aprovar o cutover gradual** da API pública para o SAI3.

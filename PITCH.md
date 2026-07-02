@@ -1,26 +1,26 @@
-![capa](assets/diamante.png)
+![capa](assets/portfolio.png)
 
 # O Pitch
 ## Enquanto a operação seguia normal, reconstruímos a fundação inteira.
 
 > Este documento existe para contar, de uma vez, o que já aconteceu:
-> **os sistemas mais críticos do IMAP foram reescritos, endurecidos e colocados em produção** — saindo de uma base morta e paga para uma base **moderna, blindada e gratuita**.
+> **os sistemas mais críticos do IMAP foram reescritos, endurecidos e colocados em produção** — saindo de uma base antiga e paga para uma base **moderna, blindada e gratuita**.
 > Não é um plano. Não é uma promessa. **Está no ar agora.**
 
 ---
 
-## 1. O problema que ninguém via
+## 1. O desafio herdado
 
-Quase tudo que o IMAP opera — nota fiscal, diário oficial, transparência, editoração — rodava sobre **duas tecnologias mortas**:
+Quase tudo que o IMAP opera — nota fiscal, diário oficial, transparência, editoração — rodava sobre **duas tecnologias que chegaram ao fim do ciclo de vida**:
 
-- **Adobe ColdFusion 11** — sem correção de segurança há **~6 anos**, licença cara, mercado de profissionais secando.
+- **Adobe ColdFusion 11** — sem correção de segurança há **~6 anos**, licença cara, mercado de profissionais cada vez mais restrito.
 - **Windows Server 2012 R2** — **sem atualizações desde 2023**, licença + CALs recorrentes.
 
 Emitir nota fiscal, publicar atos com valor legal e tratar dados de cidadãos exige uma base **mantida, segura e auditável** — e foi exatamente isso que o programa construiu.
 
 ## 2. A revelação
 
-**Esse problema já foi atacado — e vencido, frente a frente.**
+**Esse desafio já foi enfrentado — e superado, frente a frente.**
 
 Sem parar a operação, sem big-bang e sem risco para o cidadão, **6 sistemas foram reconstruídos e estão em produção** sobre .NET 10, Python/FastAPI, React, Docker e Oracle Linux — com WAF, SIEM e TLS automático que o legado **nunca teve**.
 
@@ -40,12 +40,12 @@ Sem parar a operação, sem big-bang e sem risco para o cidadão, **6 sistemas f
 | Suporte da nova base (Oracle Linux 9) | **até 2032** |
 | Interrupção para o cidadão durante a migração | **zero** |
 
-## 4. Os cinco golpes certeiros
+## 4. Os cinco ganhos decisivos
 
 1. **💸 Custo — cortado pela raiz.** Sai Adobe ColdFusion, sai Windows Server + CALs, saem componentes proprietários. Entra open-source: **licença R$ 0, para sempre**. Runtimes mais leves + 15 sistemas num host = **menos nuvem na fatura**.
 2. **🛡️ Segurança — décadas de atraso resolvidas de uma vez.** WAF (ModSecurity/OWASP) na borda, SIEM (Wazuh) vigiando, SELinux no kernel, TLS renovando sozinho em ~400 domínios, fail2ban, JWT, segredos protegidos. **Defesa em profundidade onde antes não havia nenhuma.**
 3. **⚖️ LGPD — conformidade fortalecida.** A base modernizada é **suportada, monitorada e auditável**, com **trilha de evidências** — exatamente o que a defesa de "medidas de segurança adequadas" da LGPD pede.
-4. **👥 Pessoas — fim do refém.** De um mercado ColdFusion em extinção para **as stacks mais contratáveis do planeta** (Python, .NET, React, TypeScript). Contratar, treinar e substituir ficou simples.
+4. **👥 Pessoas — liberdade de contratação.** De um mercado ColdFusion cada vez mais restrito para **as stacks mais contratáveis do planeta** (Python, .NET, React, TypeScript). Contratar, treinar e substituir ficou simples.
 5. **🧭 Futuro — pavimentado e provado.** Cada sistema novo herda a fundação pronta (contêineres, segurança, CI): **nasce mais rápido e mais barato**. NFS-e Nacional pronta antes da obrigatoriedade, IA/voz no Diário, portão de fidelidade — coisas que o legado **jamais** entregaria.
 
 ## 5. E o método é tão valioso quanto o resultado
@@ -67,18 +67,18 @@ A camada pública saiu do legado. As **duas peças de infraestrutura compartilha
 
 Concluídas essas duas, **o ciclo da fundação se encerra**: base unificada, zero licença desnecessária.
 
-### E o alvo que a casa inteira sente todos os dias: o ERP interno
+### E o ganho que a casa inteira percebe todos os dias: o ERP interno
 
 O **ERP administrativo/financeiro** — o sistema que sustenta o dia a dia interno do Instituto — é **o sistema mais antigo do parque**, o último grande bloco da geração ColdFusion: evolução lenta, manutenção cara e conhecimento concentrado em poucas pessoas.
 
-Ele tem duas metades, **já diagnosticadas linha a linha — e o resgate já começou**:
+Ele tem duas metades, **já diagnosticadas linha a linha — e a renovação já começou**:
 
 - **[SGF — Gestão Financeira](sgf/resumo-executivo-modernizacao.md)**: vendas, boletos, faturas, remessas bancárias e comissões — **207 páginas `.cfm`, ~49 mil linhas** a modernizar. É onde o dinheiro entra.
 - **[SGC — Gestão de Clientes](sgc/resumo-executivo-modernizacao.md)**: clientes, contratos, propostas e atendimentos — **79 páginas `.cfm`** e um front de **356 arquivos de script** a reconstruir em componentes modernos.
 
 Os serviços novos **já entraram no host Docker consolidado**, ao lado das demais frentes — herdando CI, autenticação e as camadas de segurança desde o primeiro dia.
 
-**É exatamente para resgatá-lo que este programa importa:**
+**É exatamente para renová-lo que este programa importa:**
 
 - **A fundação já está pronta** — contêineres, CI, autenticação, WAF/SIEM/SELinux e o host consolidado: o ERP novo **não começa do zero**, ele **herda tudo**.
 - **O método já foi provado no pior caso** — o SIEJ tinha ~20 anos de legado e migrou **módulo a módulo, lendo o mesmo banco, com rollback** e sem parar um dia. **O ERP é o mesmo filme**, com roteiro já escrito.
@@ -89,13 +89,13 @@ Os serviços novos **já entraram no host Docker consolidado**, ao lado das dema
 
 1. **Aprovar o cutover gradual** das frentes já validadas (começando pelo SAI3, que provou 0 incompatibilidades).
 2. **Aprovar a frente de Infraestrutura** — banco e arquivos para Linux, fechando o ciclo da fundação.
-3. **Sustentar o resgate do ERP interno** — já iniciado (SGF + SGC), sobre a fundação e o método já provados.
+3. **Sustentar a renovação do ERP interno** — já iniciado (SGF + SGC), sobre a fundação e o método já provados.
 4. **Dar visibilidade ao programa** — ele posiciona o IMAP como **referência em governo digital**.
 
 ---
 
 > ### Em uma frase
-> **O IMAP trocou uma fundação morta e paga por uma fundação viva, blindada e gratuita — sem parar um único dia, com prova de cada passo — e agora tem método, plataforma e equipe para a próxima década.**
+> **O IMAP trocou uma fundação antiga e paga por uma fundação moderna, protegida e gratuita — sem parar um único dia, com prova de cada passo — e agora tem método, plataforma e equipe para a próxima década.**
 >
 > O trabalho está feito. Falta só a decisão de colher tudo.
 

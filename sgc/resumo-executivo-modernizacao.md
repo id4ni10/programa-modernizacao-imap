@@ -1,9 +1,9 @@
-![capa](../assets/sections/software.png)
+![capa](imap-sgc-capa.png)
 
 # IMAP SGC — Gestão de Clientes
 > O núcleo **de relacionamento** do ERP interno: clientes, contatos, contratos, propostas comerciais e atendimentos.
 > **De ColdFusion + Windows Server → Python/FastAPI + Astro/Vite + Docker.**
-> **Estado: em andamento — o resgate do ERP interno já começou**, sobre a fundação provada.
+> **Estado: em andamento — a renovação do ERP interno já começou**, sobre a fundação provada.
 > *Uma frente do **[Programa de Modernização IMAP](../PROGRAMA-MODERNIZACAO-IMAP.md)**.*
 
 ---
@@ -12,9 +12,9 @@
 
 O **SGC (Sistema de Gestão de Clientes)** é a metade de relacionamento do ERP interno: cadastro de **clientes e contatos**, **contratos** e **propostas comerciais**, catálogo de **produtos e módulos** e a central de **atendimentos** (tickets) por canal, categoria e responsável. É a memória de quem é cliente, o que contratou e o histórico de suporte.
 
-Nasceu na geração ColdFusion e agora recebe **a mesma base moderna já provada nas outras seis frentes** — é o par comercial do **[SGF](../sgf/resumo-executivo-modernizacao.md)** no resgate do ERP interno, já em andamento.
+Nasceu na geração ColdFusion e agora recebe **a mesma base moderna já provada nas outras seis frentes** — é o par comercial do **[SGF](../sgf/resumo-executivo-modernizacao.md)** na renovação do ERP interno, já em andamento.
 
-## O tamanho do resgate (medido no código legado)
+## O tamanho da renovação (medido no código legado)
 
 Números reais do código-fonte atual — a escala do trabalho:
 
@@ -72,7 +72,7 @@ Números reais do código-fonte atual — a escala do trabalho:
 
 ## 📍 Estado & próximos passos
 
-Esta frente — par do **[SGF](../sgf/resumo-executivo-modernizacao.md)** no resgate do ERP interno anunciado no **[Pitch](../PITCH.md)** (§6) — **já está em andamento**: o serviço novo **já entrou no host Docker consolidado**, herdando toda a fundação (CI, autenticação, WAF/SIEM/SELinux). O diagnóstico do legado está completo (números acima) e o resgate segue o **método provado**: módulo a módulo, lendo o mesmo banco, com rollback.
+Esta frente — par do **[SGF](../sgf/resumo-executivo-modernizacao.md)** na renovação do ERP interno anunciado no **[Pitch](../PITCH.md)** (§6) — **já está em andamento**: o serviço novo **já entrou no host Docker consolidado**, herdando toda a fundação (CI, autenticação, WAF/SIEM/SELinux). O diagnóstico do legado está completo (números acima) e a renovação segue o **método provado**: módulo a módulo, lendo o mesmo banco, com rollback.
 
 ## 🧰 Tecnologias
 

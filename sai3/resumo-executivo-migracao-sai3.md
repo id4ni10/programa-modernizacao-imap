@@ -17,7 +17,7 @@
 
 | | |
 |---|---|
-| 🔴 **Plataforma morta** | .NET Framework 4.6.1 **descontinuado desde 2022** — aplicação **já migrada** |
+| 🔴 **Plataforma descontinuada** | .NET Framework 4.6.1 **descontinuado desde 2022** — aplicação **já migrada** |
 | 🟢 **640** | requisições reais testadas (2 municípios, dados reais) — **0 incompatibilidades** |
 | 🟢 **R$ 0** | de licença de SO na camada de aplicação (Oracle Linux 9, suporte até **2032**) |
 | 🟢 **Licença ≈ R$ 0** | SO, runtime, WAF, SIEM e bibliotecas: gratuitos/open-source (ver §2) |

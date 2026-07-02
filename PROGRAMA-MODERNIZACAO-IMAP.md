@@ -1,4 +1,4 @@
-![capa](assets/diamante.png)
+![capa](assets/sections/software.png)
 
 # Programa de Modernização IMAP
 ### Visão executiva do portfólio · Junho/2026
@@ -64,7 +64,7 @@ Não citamos valores estimados (os números de contrato ainda estão sendo levan
 
 - **💸 Licença → R$ 0.** Fim de **Adobe ColdFusion**, **Windows Server + CALs** e componentes proprietários (PDF). A nova stack (.NET, Python, React, Linux, Docker, WAF, SIEM) é **gratuita**.
 - **⚡ Compute menor.** Runtimes modernos são **mais leves** que o ColdFusion; com **contêineres**, vários sistemas **dividem um mesmo host** (menos VMs) e rodam em **Linux/ARM mais baratos** → **menos CPU/RAM → fatura de nuvem menor**.
-- **🔧 Manutenção menor.** TLS e deploy **automáticos**, **testes** que barram regressões (menos incidentes, menos "apagar incêndio"), **código legível e testado** e **mão de obra barata/abundante** → **menos horas de operação**, ano após ano.
+- **🔧 Manutenção menor.** TLS e deploy **automáticos**, **testes** que barram regressões (menos incidentes, menos suporte reativo), **código legível e testado** e **mão de obra barata/abundante** → **menos horas de operação**, ano após ano.
 
 > Quando os valores reais do contrato forem consolidados, eles apenas **quantificam** uma economia que já é estrutural — e **recorrente**.
 
@@ -151,7 +151,7 @@ A camada de **aplicação** está modernizada. A próxima etapa leva as duas pe�
 
 Também no radar: **aposentar ColdFusion 11 + Windows Server 2012 R2** conforme os últimos módulos saem, e os **painéis administrativos** restantes.
 
-### 🏗️ O ERP interno — o resgate já começou
+### 🏗️ O ERP interno — a renovação já começou
 
 Depois da infraestrutura, o alvo de maior impacto **interno** é o **ERP administrativo/financeiro** — o sistema que a própria equipe do Instituto usa todos os dias, e **o mais antigo do parque**:
 
@@ -165,7 +165,7 @@ Depois da infraestrutura, o alvo de maior impacto **interno** é o **ERP adminis
 
 > O ERP é o **mesmo filme do SIEJ com o roteiro já escrito** — e cada frente entregue **barateou** essa reconstrução, porque plataforma, esteira e equipe treinada já existem.
 
-As duas metades do ERP já têm **diagnóstico completo — e o resgate já começou** (os serviços novos já estão no host consolidado):
+As duas metades do ERP já têm **diagnóstico completo — e a renovação já começou** (os serviços novos já estão no host consolidado):
 
 - 📄 **[`sgf/`](sgf/resumo-executivo-modernizacao.md)** — **SGF · Gestão Financeira** (vendas, boletos, remessas, comissões): 207 páginas `.cfm`, ~49 mil linhas a modernizar → **FastAPI + Astro/Vite + Docker**.
 - 📄 **[`sgc/`](sgc/resumo-executivo-modernizacao.md)** — **SGC · Gestão de Clientes** (clientes, contratos, atendimentos): 79 páginas `.cfm` e 356 arquivos de front a reconstruir → **FastAPI + Astro/Vite + Docker**.
@@ -177,7 +177,7 @@ As duas metades do ERP já têm **diagnóstico completo — e o resgate já come
 1. **Reconhecer o programa de modernização** como um ativo estratégico do IMAP.
 2. **Acelerar as frentes já em produção** (cutover por cliente/tipo, apoiado nas provas existentes).
 3. **Aprovar a próxima frente de infraestrutura** (banco e FTP) para encerrar o legado e o licenciamento.
-4. **Sustentar o resgate do ERP interno** — já iniciado (SGF + SGC), sobre a fundação e o método já provados.
+4. **Sustentar a renovação do ERP interno** — já iniciado (SGF + SGC), sobre a fundação e o método já provados.
 5. **Dar visibilidade** ao portfólio junto à diretoria e aos clientes.
 
 ---
