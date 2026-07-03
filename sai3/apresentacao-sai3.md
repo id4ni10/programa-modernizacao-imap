@@ -84,7 +84,7 @@ Agora o sistema tem **defesa em profundidade** — várias barreiras independent
 - **Detecção de intrusão (HIDS)** e logs centralizados.
 - **Monitoramento de integridade de arquivos (FIM)** — alerta se algo crítico for alterado.
 - **Detecção de vulnerabilidades** e avaliação de configuração (benchmarks CIS).
-- **Alertas em tempo quase real** e **relatórios de conformidade** (LGPD).
+- **Alertas em tempo quase real** e **relatórios de conformidade prontos** (LGPD, PCI-DSS, NIST) — material direto para auditoria.
 
 > Saímos de **"esperar dar problema"** para **detectar, alertar e provar**.
 

@@ -18,7 +18,7 @@ Quase todos os sistemas centrais rodavam sobre **duas tecnologias fora de suport
 | **Adobe ColdFusion 11** | 2019 / 2021 | ~5–6 anos **sem correções de segurança** · licença recorrente · mercado de profissionais escasso |
 | **Windows Server 2012 R2** | 10/10/2023 | Sem atualizações de segurança · risco de auditoria · ESU pago |
 
-Sobre essa base, o IMAP **emitia notas fiscais, publicava atos oficiais com valor legal e tratava dados de cidadãos** — operações que exigem uma base **mantida, segura e auditável**. O programa entregou exatamente isso.
+O IMAP **emite notas fiscais, publica atos oficiais com valor legal e trata dados de cidadãos** — operações que exigem uma base **mantida, segura e auditável**. O programa foi criado para garantir exatamente isso — e entregou.
 
 > 📄 **Todas as vantagens de aposentar essa fundação → [`POR-QUE-SAIR-DO-LEGADO.md`](POR-QUE-SAIR-DO-LEGADO.md).**
 
@@ -60,7 +60,7 @@ Seis sistemas críticos, modernizados e **no ar**, cada um lendo o **mesmo banco
 
 ![custos](assets/sections/custos.png)
 
-Não citamos valores estimados (os números de contrato ainda estão sendo levantados) — mas a **redução é estrutural e certa**, em três eixos:
+Mais forte que qualquer estimativa pontual: a **redução é estrutural e certa**, em três eixos:
 
 - **💸 Licença → R$ 0.** Fim de **Adobe ColdFusion**, **Windows Server + CALs** e componentes proprietários (PDF). A nova stack (.NET, Python, React, Linux, Docker, WAF, SIEM) é **gratuita**.
 - **⚡ Compute menor.** Runtimes modernos são **mais leves** que o ColdFusion; com **contêineres**, vários sistemas **dividem um mesmo host** (menos VMs) e rodam em **Linux/ARM mais baratos** → **menos CPU/RAM → fatura de nuvem menor**.
@@ -179,6 +179,25 @@ As duas metades do ERP já têm **diagnóstico completo — e a renovação já 
 3. **Aprovar a próxima frente de infraestrutura** (banco e FTP) para encerrar o legado e o licenciamento.
 4. **Sustentar a renovação do ERP interno** — já iniciado (SGF + SGC), sobre a fundação e o método já provados.
 5. **Dar visibilidade** ao portfólio junto à diretoria e aos clientes.
+6. **Incorporar o programa ao planejamento estratégico** — como capacidade permanente, com toda a empresa colaborando (ver §12).
+
+---
+
+## 12. Programa permanente — no plano estratégico, com todos a bordo
+
+A modernização **não é um projeto com data de fim** — é uma **capacidade permanente** do Instituto, e deve constar do **planejamento estratégico** dos próximos anos: cada ciclo prioriza os próximos módulos, colhe os ganhos e realimenta o plano.
+
+E ela é **de todos** — cada área tem como colaborar:
+
+| Área | Como colabora |
+|---|---|
+| **Operação (quem usa os sistemas)** | Apontar o que atrapalha no dia a dia — cada tela renovada nasce do feedback de quem opera; a renovação do ERP interno é a prova. |
+| **Desenvolvimento** | Migrar módulo a módulo na esteira pronta (fundação + CI + testes); cada dev que domina a plataforma **multiplica o ritmo**. |
+| **Infraestrutura & Segurança** | Expandir o monitoramento (SIEM), endurecer camadas e conduzir a frente de banco e arquivos. |
+| **Comercial & Atendimento** | Transformar os diferenciais (NFS-e Nacional, voz/IA no Diário, portais adaptativos) em **argumento junto aos clientes**. |
+| **Gestão** | Priorizar módulos por valor, garantir o espaço no plano estratégico e dar visibilidade aos resultados. |
+
+> 🤝 Sugestões e melhorias são bem-vindas de **qualquer pessoa da casa** — o programa avança na velocidade da colaboração.
 
 ---
 

@@ -91,6 +91,11 @@ Os serviços novos **já entraram no host Docker consolidado**, ao lado das dema
 2. **Aprovar a frente de Infraestrutura** — banco e arquivos para Linux, fechando o ciclo da fundação.
 3. **Sustentar a renovação do ERP interno** — já iniciado (SGF + SGC), sobre a fundação e o método já provados.
 4. **Dar visibilidade ao programa** — ele posiciona o IMAP como **referência em governo digital**.
+5. **Incorporar ao planejamento estratégico** — modernização como **capacidade permanente** do Instituto, não projeto com data de fim.
+
+### 🤝 Um programa de todos
+
+A próxima fase precisa da **casa inteira** — e cada área tem um papel: a **operação** aponta o que atrapalha no dia a dia (cada tela renovada nasce desse feedback), o **desenvolvimento** migra módulos na esteira pronta, a **infraestrutura** conduz banco e arquivos, o **comercial** transforma os diferenciais em argumento com clientes, e a **gestão** garante o espaço no plano. **Quem quiser colaborar tem porta aberta** — o programa avança na velocidade da colaboração.
 
 ---
 

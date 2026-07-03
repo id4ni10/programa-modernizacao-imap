@@ -19,9 +19,9 @@ _[Responsável] · [Data]_
 - Rodava sobre **duas tecnologias fora de suporte**:
   - **ColdFusion 11** — fim de vida desde **2019**
   - **Windows Server 2012 R2** — fim de suporte em **2023**
-- Tratando **dados de cidadãos** (publicações oficiais: DOU, Correio, A Tarde).
+- Sistema central de **publicações oficiais** (DOU, Correio, A Tarde) — por isso foi prioridade.
 
-> Software sem patch de segurança + dado sensível = **risco aberto, agora.**
+> Por isso o SIEJ foi **prioridade nº 1** da modernização — **e já foi entregue.**
 
 ---
 
@@ -44,7 +44,7 @@ Sair do ColdFusion, por si só, **já é o melhor negócio** — independente da
 - 👥 **Fim da dependência** de um mercado de profissionais cada vez mais restrito.
 - 🧱 **Fim do acúmulo** de dívida técnica de 20 anos.
 
-> Cada dia a mais no ColdFusion é **custo e risco** que não voltam.
+> Cada módulo que sai do ColdFusion devolve **custo e liberdade** — imediatamente.
 
 ---
 
@@ -156,7 +156,7 @@ Isto **não foi só migrar um sistema** — foi construir a **fundação tecnol�
 
 ## Recomendação
 
-**Aprovar a continuidade da migração incremental**, começando pelos módulos de **maior risco de segurança** e **maior custo de manutenção**.
+**Aprovar a continuidade da migração incremental**, começando pelos módulos de **maior valor** e **maior custo de manutenção**.
 
 - Base **validada em produção**.
 - Caminho **evolutivo e reversível**.

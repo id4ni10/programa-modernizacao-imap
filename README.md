@@ -49,3 +49,5 @@ para stacks **modernas, open-source e conteinerizadas em nuvem** — **em produ�
 | 🔜 [`sgc/`](sgc/resumo-executivo-modernizacao.md) | **ERP interno — em andamento:** SGC · Gestão de Clientes · ColdFusion → **Python/FastAPI + Astro/Vite + Docker** |
 
 > Em produção · validado · reversível · **licença de software R$ 0** · base para os próximos anos.
+
+> 🤝 **Programa permanente, de todos:** deve constar do **plano estratégico** — e **cada área da empresa pode colaborar** (operação, desenvolvimento, infraestrutura, comercial, gestão). Como → **[Programa, §12](PROGRAMA-MODERNIZACAO-IMAP.md)**.
