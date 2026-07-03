@@ -24,33 +24,15 @@ O núcleo fiscal que **emite e gerencia NFS-e**. Rodava em **ColdFusion 11** sob
 | Entrega | manual | **CI + deploy conteinerizado** |
 | NFS-e Nacional | inexistente | **pronta** (emissão + conciliação) |
 
-## ✅ Benefícios comuns (valem para todas as frentes do programa)
+## 🏆 Ganhos desta frente
 
-> Detalhados no **[Programa](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
+- **🚀 Modernização — NFS-e Nacional pronta antes da obrigatoriedade.** Padrão federal **SNNFSe** completo: montagem, validação, **assinatura digital**, transmissão de DPS, listagem via ADN e **conciliação local × nacional**.
+- **💸 Custos — núcleo fiscal sem licença de plataforma.** .NET 9, Docker e Linux open-source; o serviço `imap-nfse` divide o host consolidado com as demais frentes.
+- **🧱 Endurecimento — não sobe malconfigurado.** **Validação de configuração na inicialização** + **segredos protegidos**: erro de ambiente vira falha de partida, não incidente fiscal.
+- **🛡️ Salvaguarda — o XML fiscal é blindado.** Teste **"golden"** do documento fiscal **bloqueia o deploy** se um byte mudar; **assinatura mTLS com o fisco**; **49 testes verdes** a cada build.
+- **🧭 Futuro — adesão nacional como diferencial.** A mesma fundação recebe os módulos restantes — e estar pronto para a NFS-e Nacional **antes** da exigência vira vantagem comercial imediata.
 
-- 💸 **Licença de software R$ 0** — .NET, Docker e Linux open-source.
-- 🛡️ **Fim de tecnologia sem suporte** — base mantida e com patches.
-- 🐋 **Linux + Docker + Oracle Cloud** — **consolidação real**: o serviço `imap-nfse` roda no host Docker de produção, junto de **outros 14 contêineres** (mais densidade, menos VMs).
-- 🔒 **Segurança em profundidade** — WAF, SIEM (Wazuh), TLS automático, hardening (SELinux), segredos protegidos.
-- ♻️ **Migração incremental e reversível** — lê o mesmo banco, roda lado a lado, rollback rápido.
-- ✅ **Modernização provada** — 49 testes verdes a cada build, incluindo teste "golden" do XML fiscal.
-- 👥 **Mão de obra abundante** — .NET é padrão de mercado.
-- ⚙️ **Sem parar a operação.**
-
-## ⭐ Benefícios específicos desta frente
-
-- **🧾 NFS-e Nacional** (padrão federal SNNFSe) — montagem, validação, **assinatura digital**, transmissão de DPS, listagem via ADN e **conciliação local × nacional**. Prontos **antes** da obrigatoriedade.
-- **🔏 Assinatura mTLS para o fisco** e validação na inicialização.
-- **🧪 Blindagem do XML fiscal** — teste "golden" impede regressões no documento fiscal.
-- **♿ Acessibilidade & UX** — formulários com rótulos, foco visível, contraste, layout responsivo.
-
-## 🔎 Aprofundamento — os 5 eixos
-
-- **🚀 Modernização.** Núcleo fiscal sai do ColdFusion 11 para **.NET 9** com **CI + deploy conteinerizado**. A **NFS-e Nacional** (padrão federal SNNFSe) já está **pronta** — emissão, assinatura digital, transmissão de DPS e conciliação local × nacional — **antes** da obrigatoriedade.
-- **💸 Custos.** Fim da **licença ColdFusion + Windows Server + CALs**; .NET, Docker e Linux são **open-source (R$ 0)**. O serviço `imap-nfse` **compartilha o host Docker** com ~14 outros contêineres — consolidação real, menos VMs.
-- **🧱 Endurecimento (hardening).** **Segredos protegidos**, **validação de configuração na inicialização** (o serviço não sobe malconfigurado) e **contêiner Linux sob SELinux** — o oposto da prática legada.
-- **🛡️ Segurança & salvaguarda.** Emitir nota fiscal sobre um SO sem manutenção era o risco central. Agora: **TLS Let's Encrypt automático**, **assinatura mTLS com o fisco**, **WAF + SIEM (Wazuh)** e um **teste "golden" do XML fiscal** que **bloqueia o deploy** se o documento fiscal mudar. São **49 testes verdes a cada build**.
-- **🧭 Futuro já pavimentado e provado.** **Em produção** em `sga.imap.org.br` com banco real conectado e health-check `ready`. A mesma fundação recebe os **módulos restantes** do ColdFusion — até desligar o Windows Server 2012 R2.
+> ♻️ Somam-se os **benefícios comuns do programa** — **licença R$ 0**, base mantida e com patches, **Linux + Docker + OCI**, **segurança em profundidade** (WAF · SIEM · SELinux · TLS automático), **migração incremental e reversível**, mão de obra abundante, **sem parar a operação** — descritos uma única vez no **[Programa, §3](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
 
 ## 📍 Provas (em produção)
 

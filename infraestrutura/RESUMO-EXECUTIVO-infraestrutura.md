@@ -44,28 +44,15 @@ O servidor de arquivos serve mídias, documentos e **PDFs de atos oficiais**. Mo
 
 ---
 
-## ✅ Benefícios comuns (valem para todas as frentes do programa)
+## 🏆 Ganhos desta frente
 
-> Detalhados no **[Programa](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
+- **🚀 Modernização — migração sem reescrita.** O **SQL Server 2017 roda nativamente em Linux**: mesma engine, mesmos *stored procedures*, mesma aplicação — o passo é de **baixo atrito por natureza**.
+- **💸 Custos — a última licença desnecessária.** Elimina **Windows Server + CALs** nos hosts de banco e arquivos, e abre o caminho para **PostgreSQL (licença R$ 0)**.
+- **🧱 Endurecimento — arquivos de primeira classe.** **SFTP/FTPS** ou **Object Storage com URLs assinadas**, host sob **SELinux**, superfície mínima.
+- **🛡️ Salvaguarda — cifragem de ponta a ponta.** Mídias, documentos e **PDFs de atos oficiais** trafegam cifrados — padrão atual de segurança/LGPD.
+- **🧭 Futuro — fecha o ciclo com método.** Réplica/espelho, lado a lado, **a mesma suíte que validou o SAI3 (640 requisições)** e rollback — o encerramento do programa com a régua que já provou funcionar.
 
-- 💸 **Rumo à licença R$ 0** — fim do Windows Server no host de banco/arquivos; PostgreSQL e SFTP são open-source.
-- 🛡️ **Fim de tecnologia sem suporte** — SO com patches contínuos.
-- 🐋 **Linux + Oracle Cloud** — consolidação e integração com os sistemas já conteinerizados.
-- 🔒 **Segurança em profundidade** — transferência cifrada, hardening (SELinux), superfície reduzida.
-- ♻️ **Migração incremental e reversível** — réplica/espelho + cutover em janela + rollback.
-- ✅ **Método já provado** — o mesmo padrão que validou as 6 frentes (mesma base, lado a lado, validação antes do cutover).
-
----
-
-## 🔎 Aprofundamento — os 5 eixos
-
-- **🚀 Modernização.** Tira as **duas últimas peças** (banco e arquivos) do Windows legado. Como o banco já é **SQL Server 2017** (roda **nativamente em Linux**), o primeiro passo é **de baixo atrito**: mesma versão, mesmos *stored procedures*, mesma aplicação — sem reescrita.
-- **💸 Custos.** **Elimina a licença de Windows Server + CALs** no host de banco e no de arquivos. Abre o caminho para **PostgreSQL open-source (licença R$ 0)** no futuro; SFTP e Object Storage também são open-source.
-- **🧱 Endurecimento (hardening).** Entra **SFTP/FTPS** ou **Object Storage com URLs assinadas**; host sob **SELinux** e **superfície reduzida**.
-- **🛡️ Segurança & salvaguarda.** **Transferência cifrada de ponta a ponta** dos arquivos (mídias, documentos e **PDFs de atos oficiais**) — padrão de segurança/LGPD atual; SO com **patches contínuos**.
-- **🧭 Futuro já pavimentado e provado.** É a frente que **fecha o ciclo** do programa. Usa o **mesmo método já validado** nas 6 frentes (réplica/espelho, lado a lado, validação antes do cutover) e a **mesma suíte** que comprovou o SAI3 (640 requisições) — encerra a licença e a superfície de risco que restam.
-
----
+> ♻️ Somam-se os **benefícios comuns do programa** — **licença R$ 0**, base mantida e com patches, **Linux + Docker + OCI**, **segurança em profundidade** (WAF · SIEM · SELinux · TLS automático), **migração incremental e reversível**, mão de obra abundante, **sem parar a operação** — descritos uma única vez no **[Programa, §3](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
 
 ## ⚠️ Riscos e mitigação
 

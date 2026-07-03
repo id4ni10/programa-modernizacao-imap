@@ -21,32 +21,15 @@
 | Deploy | arriscado | **backup → validação → recarga sem downtime → rollback em 1 comando** |
 | Backend | .NET Framework (legado) | **canário SAI3** em consórcios e autarquias |
 
-## ✅ Benefícios comuns (valem para todas as frentes do programa)
+## 🏆 Ganhos desta frente
 
-> Detalhados no **[Programa](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
+- **🚀 Modernização — plataforma organizada por tipo de órgão.** Mudanças cirúrgicas por categoria, **raio de impacto contido**, zero perda ou duplicidade de domínios.
+- **💸 Custos — HTTPS que se renova sozinho.** **~400 domínios** com certificado automático (`mod_md` + Let's Encrypt) — fim da gestão manual de centenas de certificados.
+- **🧱 Endurecimento — deploy sem medo.** **Backup → validação → recarga sem downtime → rollback em 1 comando.**
+- **🛡️ Salvaguarda — quebra silenciosa vira alerta.** A suíte **Cypress** varre **~210 rotas** e captura até erros que o Angular só registra no console — **bug vira alerta antes do deploy**, não reclamação de cidadão.
+- **🧭 Futuro — o canário que provou o SAI3.** Consórcios e autarquias já no novo backend com **640 requisições reais → 0 incompatibilidades**; expansão **tipo a tipo** até o cutover completo, com **zero interrupção**.
 
-- 💸 **Licença de software R$ 0** — SO, WAF, SIEM e stack open-source.
-- 🛡️ **Fim de tecnologia sem suporte** — o backend migra para .NET 10 / OL9 (ver **[SAI3](../sai3/)**).
-- 🐋 **Linux + Docker + Oracle Cloud** — base enxuta e escalável.
-- 🔒 **Segurança em profundidade** — WAF (ModSecurity/OWASP), SIEM (Wazuh), TLS automático, hardening (SELinux) — verificados no host de produção.
-- ♻️ **Migração incremental e reversível** — estratégia de **canário** por tipo de órgão, com **rollback instantâneo**.
-- ✅ **Modernização provada** — o SAI3 foi validado com **640 requisições reais (2 municípios) → 0 incompatibilidades**.
-- ⚙️ **Sem parar a operação** — **zero interrupção** para o cidadão.
-
-## ⭐ Benefícios específicos desta frente
-
-- **🧪 Detecção proativa** — suíte **Cypress** varre **~210 rotas** e captura quebras (inclusive erros tratados pelo Angular no console) que ferramentas padrão não detectam → bug vira **alerta antes do deploy**.
-- **🧱 Organização por tipo de órgão** — mudanças cirúrgicas por categoria, **raio de impacto reduzido**, zero perda/duplicidade de domínios.
-- **🔐 HTTPS universal** — **~400 domínios** com certificado automático e renovação; higienização de conteúdo misto.
-- **🐤 Canário SAI3** — consórcios e autarquias já no novo backend, isolados, validando a migração em produção **em escala controlada**.
-
-## 🔎 Aprofundamento — os 5 eixos
-
-- **🚀 Modernização.** **~400 portais** numa **plataforma multi-tenant** reorganizada **por tipo de órgão** (raio de impacto isolado), com o novo backend **[SAI3](../sai3/)** (**.NET 10 / Oracle Linux 9**) já entrando como **canário** em consórcios e autarquias.
-- **💸 Custos.** **Licença R$ 0** (SO, WAF, SIEM e stack open-source) e **HTTPS automático** (`mod_md` + Let's Encrypt) em **~400 domínios** — fim da gestão e renovação manual de centenas de certificados.
-- **🧱 Endurecimento (hardening).** **WAF (ModSecurity/OWASP)** e **SELinux** no host de produção; deploy com **backup → validação → recarga sem downtime → rollback em 1 comando**. Organização por categoria reduz o **raio de impacto** de qualquer mudança.
-- **🛡️ Segurança & salvaguarda.** A suíte **Cypress** varre **~210 rotas** e captura quebras (inclusive erros que o Angular trata só no console) — **bug vira alerta antes do deploy**. **HTTPS universal** com higienização de conteúdo misto.
-- **🧭 Futuro já pavimentado e provado.** Consórcios e autarquias **já no SAI3**, isolados, com **zero interrupção** ao cidadão; o SAI3 foi validado com **640 requisições reais → 0 incompatibilidades**. O canário **expande tipo a tipo** até o cutover completo.
+> ♻️ Somam-se os **benefícios comuns do programa** — **licença R$ 0**, base mantida e com patches, **Linux + Docker + OCI**, **segurança em profundidade** (WAF · SIEM · SELinux · TLS automático), **migração incremental e reversível**, mão de obra abundante, **sem parar a operação** — descritos uma única vez no **[Programa, §3](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
 
 ## 📍 Provas (em produção)
 

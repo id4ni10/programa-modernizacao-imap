@@ -42,32 +42,15 @@ Números reais do código-fonte atual — a escala do trabalho:
 | Entrega | manual | **CI + deploy conteinerizado** |
 | TLS/HTTPS | manual | **Let's Encrypt automático** |
 
-## ✅ Benefícios comuns (valem para todas as frentes do programa)
+## 🏆 Ganhos desta frente
 
-> Detalhados no **[Programa](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
+- **🚀 Modernização — ~49 mil linhas viram arquitetura.** O hub único de ~4.000 linhas dá lugar a **API FastAPI modular + front Astro/Vite tipado** — a mesma arquitetura já em produção no DIOF e no SIEJ.
+- **💸 Custos — o núcleo financeiro sem licença.** Fim da licença de plataforma; **boleto e remessa (CNAB) por bibliotecas abertas** — sem componente proprietário no caminho do dinheiro.
+- **🧱 Endurecimento — integridade por construção.** **Transações + validação de tipos (Pydantic) + consultas parametrizadas por padrão**: a arquitetura garante, não a disciplina.
+- **🛡️ Salvaguarda — o arquivo de remessa é blindado.** Teste **"golden"** bloqueia o deploy se o CNAB mudar; **cada lançamento financeiro versionado e rastreável**, alimentando o SIEM (trilha de auditoria/LGPD).
+- **🧭 Futuro — renovação módulo a módulo.** Vendas, boletos, faturas e comissões migram **um a um, lendo o mesmo banco, com rollback** — e o serviço **já está no host consolidado**.
 
-- 💸 **Licença de software R$ 0** — Python, FastAPI, Docker e Linux open-source.
-- 🛡️ **Fim de tecnologia sem suporte** — base mantida e com patches.
-- 🐋 **Linux + Docker + Oracle Cloud** — o serviço `imap-sgf` entra no **host Docker consolidado**, junto das demais frentes.
-- 🔒 **Segurança em profundidade** — WAF, SIEM (Wazuh), TLS automático, hardening (SELinux), segredos protegidos.
-- ♻️ **Migração incremental e reversível** — lê o mesmo banco, roda lado a lado, rollback rápido — **módulo a módulo**, como no SIEJ.
-- 👥 **Mão de obra abundante** — Python é padrão de mercado; ColdFusion é cada vez mais raro no mercado.
-- ⚙️ **Sem parar a operação.**
-
-## ⭐ Benefícios específicos desta frente
-
-- **🧮 Integridade financeira por construção** — todas as escritas passam por **transações**, **validação de tipos (Pydantic)** e **consultas parametrizadas por padrão** (SQLAlchemy) — integridade garantida pela arquitetura, não por disciplina.
-- **🧾 Boleto e remessa bancária sem componente proprietário** — geração de boleto/CNAB por bibliotecas abertas e testáveis, com **teste "golden"** que bloqueia o deploy se o arquivo de remessa mudar.
-- **🔎 Trilha de auditoria (LGPD)** — cada lançamento financeiro versionado e rastreável, alimentando o SIEM.
-- **♿ UX & acessibilidade** — telas financeiras responsivas, com foco visível e contraste.
-
-## 🔎 Aprofundamento — os 5 eixos
-
-- **🚀 Modernização.** As **~49 mil linhas** de CFML e o hub `appSgf.cfm` de ~4.000 linhas dão lugar a uma **API FastAPI** modular com front **Astro/Vite** tipado — a mesma arquitetura já em produção no DIOF e no SIEJ.
-- **💸 Custos.** Fim da **licença ColdFusion + Windows Server + CALs**; a stack nova é **R$ 0** e o serviço **compartilha o host Docker** consolidado — menos VMs, menos fatura.
-- **🧱 Endurecimento (hardening).** **Segredos protegidos**, **validação de configuração na inicialização**, **consultas parametrizadas por padrão** e contêiner Linux sob **SELinux**.
-- **🛡️ Segurança & salvaguarda.** O dinheiro público passa a rodar sobre **base mantida e monitorada**: **WAF + SIEM (Wazuh)**, **TLS automático** e **testes que bloqueiam o deploy** (regras financeiras + golden do arquivo de remessa).
-- **🧭 Futuro já pavimentado.** O SGF **não começa do zero**: herda contêineres, CI, autenticação (JWT), WAF/SIEM/SELinux e o host consolidado. O método de cutover **módulo a módulo, lendo o mesmo banco, com rollback** já foi provado no SIEJ (~20 anos de legado).
+> ♻️ Somam-se os **benefícios comuns do programa** — **licença R$ 0**, base mantida e com patches, **Linux + Docker + OCI**, **segurança em profundidade** (WAF · SIEM · SELinux · TLS automático), **migração incremental e reversível**, mão de obra abundante, **sem parar a operação** — descritos uma única vez no **[Programa, §3](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
 
 ## 📍 Estado & próximos passos
 

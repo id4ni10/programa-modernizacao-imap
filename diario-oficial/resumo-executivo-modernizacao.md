@@ -21,31 +21,15 @@ Transformamos o Diário Oficial de um **repositório de PDFs** numa **plataforma
 | Acessibilidade limitada | **Fonte, contraste, leitor de tela (LBI/LAI)** |
 | Implantação manual | **IaC (Terraform) + entrega contínua** |
 
-## ✅ Benefícios comuns (valem para todas as frentes do programa)
+## 🏆 Ganhos desta frente
 
-> Detalhados no **[Programa](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
+- **🚀 Modernização — uma base, +470 domínios.** Cada cidade assume **automaticamente sua identidade visual** (CSS `color-mix`) — **sem build por cidade, sem retrabalho**.
+- **💸 Custos — um deploy atende centenas de portais.** Infraestrutura descrita em **código (Terraform)**: o ambiente inteiro se recria em minutos, sem projeto por município.
+- **🧱 Endurecimento — auditável por construção.** Cabeçalhos de segurança, **TLS automático** e IaC — nada de servidor "artesanal" que ninguém sabe reproduzir.
+- **🛡️ Salvaguarda — dever legal cumprido.** Controles de fonte, **alto contraste**, HTML semântico e ARIA (leitores de tela) — aderência à **LBI** e à **LAI** — mais **dados abertos** (XML/JSON/CSV) para prestação de contas.
+- **🧭 Futuro — o Diário que fala.** **Resumo por IA (TTS)** e **busca por voz**: o cidadão **ouve** o Diário e **pesquisa falando** — diferencial que nenhum repositório de PDFs entregaria; transparência sazonal (Festejos Juninos) pronta para replicar.
 
-- 💸 **Licença de software R$ 0** — stack web open-source.
-- 🐋 **Linux + Docker + Oracle Cloud** — hospedagem enxuta e escalável.
-- 🔒 **Segurança em profundidade** — WAF (ModSecurity), TLS automático (Let's Encrypt), hardening (SELinux), cabeçalhos de segurança.
-- 🏗️ **Infraestrutura como Código (Terraform)** — ambiente reproduzível e auditável.
-- ✅ **Entrega contínua** — toda melhoria chega ao cidadão na hora.
-- 👥 **Mão de obra abundante** — stack web padrão de mercado.
-
-## ⭐ Benefícios específicos desta frente
-
-- **🎨 Multi-tenant adaptativo** — **uma base de código → +470 domínios** (prefeituras e câmaras), cada um assumindo **automaticamente a cor de cada cidade** (CSS `color-mix`, sem build por cidade).
-- **🔊 Resumo falado por IA (TTS)** e **busca por voz** (Web Speech API) — o cidadão **ouve** e **pesquisa falando**. Acessibilidade real (dever da **LBI**) e diferencial de mercado.
-- **♿ Acessibilidade & inclusão** — controles de fonte e **alto contraste**, HTML semântico e ARIA (leitores de tela), aderência à **LBI** e à **LAI**.
-- **📊 Transparência sazonal (Festejos Juninos)** — página dedicada aos atos do São João com **exportação de dados (XML/JSON/CSV)** — prestação de contas dos gastos festivos.
-
-## 🔎 Aprofundamento — os 5 eixos
-
-- **🚀 Modernização.** De **repositório de PDFs** para **plataforma digital multi-tenant**: **uma base de código → +470 domínios**, cada cidade assumindo **automaticamente sua cor** (CSS `color-mix`, sem build por cidade). Provisionamento por **Infraestrutura como Código (Terraform)**.
-- **💸 Custos.** Stack web **open-source (R$ 0)** e **uma só base** para +470 domínios — sem retrabalho nem projeto por cidade. Hospedagem **enxuta e escalável** em Linux/OCI, com entrega contínua.
-- **🧱 Endurecimento (hardening).** **Cabeçalhos de segurança**, **TLS automático (Let's Encrypt)** e **SELinux**; ambiente **reproduzível e auditável** via Terraform (nada de servidor "artesanal").
-- **🛡️ Segurança & salvaguarda.** **WAF (ModSecurity)** na borda e acessibilidade como dever legal: controles de fonte, **alto contraste**, HTML semântico/ARIA (**LBI/LAI**). **Dados abertos** (XML/JSON/CSV) dão transparência aos gastos — inclusive a página sazonal dos Festejos Juninos.
-- **🧭 Futuro já pavimentado e provado.** **+470 domínios** em produção, **+500 municípios**, **100% aderente à LAI**, com **resumo falado por IA (TTS)** e **busca por voz** nativos — diferenciais que o repositório de PDFs jamais entregaria.
+> ♻️ Somam-se os **benefícios comuns do programa** — **licença R$ 0**, base mantida e com patches, **Linux + Docker + OCI**, **segurança em profundidade** (WAF · SIEM · SELinux · TLS automático), **migração incremental e reversível**, mão de obra abundante, **sem parar a operação** — descritos uma única vez no **[Programa, §3](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
 
 ## 📍 Provas (em produção)
 

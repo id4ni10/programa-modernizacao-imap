@@ -43,32 +43,15 @@ Números reais do código-fonte atual — a escala do trabalho:
 | Entrega | manual | **CI + deploy conteinerizado** |
 | TLS/HTTPS | manual | **Let's Encrypt automático** |
 
-## ✅ Benefícios comuns (valem para todas as frentes do programa)
+## 🏆 Ganhos desta frente
 
-> Detalhados no **[Programa](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
+- **🚀 Modernização — 356 arquivos viram componentes.** O front do template proprietário dá lugar a **componentes Astro/Vite tipados e reutilizáveis**, com build instantâneo.
+- **💸 Custos — fim do template pago.** Licença de plataforma + template proprietário saem; stack **R$ 0** no host consolidado.
+- **🧱 Endurecimento — entrada validada por padrão.** **FastAPI + Pydantic validam toda entrada**, consultas **parametrizadas por construção**, dependências **modernas e mantidas**.
+- **🛡️ Salvaguarda — dados de clientes protegidos.** **WAF + SIEM + TLS + JWT** e renderização que **escapa dados por padrão** — a memória comercial do Instituto sob as camadas atuais de segurança.
+- **🧭 Futuro — o domínio que faltava.** **Modelo único** de clientes, contratos, propostas e atendimentos (ORM explícito); par do **SGF** — juntos **fecham a renovação do ERP interno**.
 
-- 💸 **Licença de software R$ 0** — Python, FastAPI, Astro, Docker e Linux open-source (e **fim do template SmartAdmin pago**).
-- 🛡️ **Fim de tecnologia sem suporte** — base mantida e com patches.
-- 🐋 **Linux + Docker + Oracle Cloud** — o serviço `imap-sgc` entra no **host Docker consolidado**.
-- 🔒 **Segurança em profundidade** — WAF, SIEM (Wazuh), TLS automático, hardening (SELinux), segredos protegidos.
-- ♻️ **Migração incremental e reversível** — lê o mesmo banco, roda lado a lado, rollback rápido — **módulo a módulo**.
-- 👥 **Mão de obra abundante** — Python + Astro/TypeScript são o oposto do ColdFusion em disponibilidade.
-- ⚙️ **Sem parar a operação.**
-
-## ⭐ Benefícios específicos desta frente
-
-- **🧩 Front-end reconstruído** — os 356 arquivos de script do template proprietário dão lugar a **componentes Astro/Vite tipados e reutilizáveis**, com build instantâneo e **dependências modernas e mantidas**.
-- **🔒 API tipada e parametrizada** — FastAPI + Pydantic **validam toda entrada** e o SQLAlchemy gera **consultas parametrizadas por construção** — segurança garantida pela arquitetura.
-- **📇 Modelo de cliente único e limpo** — clientes, contatos, contratos e atendimentos num **domínio explícito** (ORM), fim das tabelas abreviadas espalhadas.
-- **♿ UX & acessibilidade** — telas de cadastro e atendimento responsivas, com rótulos, foco visível e contraste.
-
-## 🔎 Aprofundamento — os 5 eixos
-
-- **🚀 Modernização.** As 79 páginas `.cfm`, o hub `appSistemas.cfm` de ~3.170 linhas e os 356 arquivos de front dão lugar a uma **API FastAPI** + **front Astro/Vite** — a mesma arquitetura em produção no DIOF/SIEJ.
-- **💸 Custos.** Fim da **licença ColdFusion + Windows + template proprietário**; stack nova **R$ 0**, no **host Docker consolidado**.
-- **🧱 Endurecimento (hardening).** **Segredos protegidos**, **consultas parametrizadas por padrão**, **dependências de front modernas e mantidas** e contêiner sob **SELinux**.
-- **🛡️ Segurança & salvaguarda.** Dados de clientes (LGPD) ganham **WAF + SIEM (Wazuh)**, **TLS automático**, **JWT** e **renderização que escapa dados por padrão**.
-- **🧭 Futuro já pavimentado.** O SGC **herda** contêineres, CI, autenticação, WAF/SIEM/SELinux e o host consolidado. Cutover **módulo a módulo, lendo o mesmo banco, com rollback** — método já provado no SIEJ.
+> ♻️ Somam-se os **benefícios comuns do programa** — **licença R$ 0**, base mantida e com patches, **Linux + Docker + OCI**, **segurança em profundidade** (WAF · SIEM · SELinux · TLS automático), **migração incremental e reversível**, mão de obra abundante, **sem parar a operação** — descritos uma única vez no **[Programa, §3](../PROGRAMA-MODERNIZACAO-IMAP.md)**.
 
 ## 📍 Estado & próximos passos
 
